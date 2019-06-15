@@ -7,7 +7,7 @@ public class Father {
         new Father();
     }
 
-    Father() {
+    private Father() {
         new GameController();
     }
 }

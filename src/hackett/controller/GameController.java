@@ -13,6 +13,12 @@ public class GameController implements IController {
     public GameController() {
         view = new CliView(this);
         model = new ModelManager(this);
+        startGame();
+    }
+
+    @Override
+    public void startGame() {
+        view.sendStartMessage();
     }
 
 }
